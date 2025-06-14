@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MITS - Micro Information Technology Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body.universe-theme {
+      background: linear-gradient(to bottom, #0d0d1a, #1a1a2e);
+      color: #e0e0ff;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    .universe-theme .bg-white {
+      background-color: rgba(255, 255, 255, 0.05) !important;
+      color: #ffffff;
+      backdrop-filter: blur(8px);
+    }
+    .universe-theme .navbar {
+      background-color: #0f0f2e !important;
+    }
+    .universe-theme .btn-primary {
+      background-color: #4b00ff;
+      border-color: #3700b3;
+    }
+    .universe-theme .btn-primary:hover {
+      background-color: #3700b3;
+      border-color: #4b00ff;
+    }
+
+    body.dark-mode {
+      background: #121212;
+      color: #e0e0e0;
+    }
+    .dark-mode .bg-white {
+      background-color: #1e1e1e !important;
+      color: #fff;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body class="universe-theme">
+
+  <button class="btn btn-secondary theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MITS</a>
+      <a class="btn btn-light" href="admin/dashboard.html" target="_blank">Admin Dashboard</a>
+    </div>
+  </nav>
+
+  <header class="container text-center mt-5" data-aos="fade-up">
+    <h1 class="display-5 fw-bold">Welcome to Micro Information Technology Services (MITS)</h1>
+    <p class="lead">Empowering students through innovation, collaboration, and real-world experience</p>
+  </header>
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4" data-aos="fade-up">University Collaborations</h2>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">Guru Ghasidas Vishwavidyalaya</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT Delhi</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT Bombay</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT Kharagpur</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT Mandi</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT Patna</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT BHU</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">IIT Roorkee</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">NIT Surat</div></div>
+  <div class="col" data-aos="zoom-in"><div class="p-3 bg-white rounded shadow-sm text-center">NIT Trichy</div></div>
+</div>
+  </section>
+
+  <section class="container my-5 text-center" data-aos="fade-up">
+    <h2>Social Media Reach</h2>
+    <p><i class="bi bi-linkedin"></i> LinkedIn: <strong>28K+ followers</strong></p>
+  </section>
+
+  
+  <section class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Student Reviews</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col"><div class="p-3 bg-white rounded shadow-lg border border-2 border-primary">"MITS connected me with my dream internship!" – Nishant Jha, IIT Delhi</div></div>
+      <div class="col"><div class="p-3 bg-white rounded shadow-lg border border-2 border-primary">"Excellent mentorship and opportunities." – Tanuja Singh, IIT Bombay</div></div>
+      <div class="col"><div class="p-3 bg-white rounded shadow-lg border border-2 border-primary">"Real-world projects helped me grow!" – Sumit Jha, NIT Trichy</div></div>
+      <div class="col"><div class="p-3 bg-white rounded shadow-lg border border-2 border-primary">"Truly transformative experience." – Pragati Thakur, IIT Patna</div></div>
+    </div>
+  </section>
+<section class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Contact / Enquiry Form</h2>
+    <form method="POST" action="#" class="bg-white p-4 rounded shadow-sm">
+      <div class="mb-3"><label for="name" class="form-label">Name</label><input type="text" class="form-control" id="name" name="name" required></div>
+      <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" name="email" required></div>
+      <div class="mb-3"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" name="message" required></textarea></div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Micro Information Technology Services (MITS). All rights reserved.</p>
+  </footer>
+
+  <!-- Tawk.to Chatbot -->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5e5cxxxxxxxxx/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // GSAP animation example
+    gsap.from("header h1", { duration: 1, y: -50, opacity: 0 });
+  </script>
+</body>
+</html>
